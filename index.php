@@ -22,19 +22,19 @@
             background: #c7bbcc;
         }
     </style>
-
+    <?php
+		// Balises PHP pour la partie dynamique
+		$yourName = "Hafsa Bannass";
+		$deploymentInfo = " J'ai déployé cette page web dans le AWS cloud utilisant Terraform.";
+	?>
     <p> 
-        Je suis <strong>Hafsa Bannass</strong>
-        <br>
-        <br>
-        <br>
-        J'ai déployé ce serveur node.js dans le AWS cloud utilisant Terraform.
-        <br>
-        <br>
-        <br>
-        <br>
-        <center><img src="image.jpg" style="width: 425px; height: 285px; align-content: center;"></center>
-    </p>
+		Je suis  <strong><?php echo $yourName; ?></strong>
+		<br>
+		<?php echo $deploymentInfo; ?>
+	</p>
+
+    <center><img src="image.jpg" style="width: 425px; height: 285px; align-content: center;"></center>
+   
 
 </body>
 </html>
